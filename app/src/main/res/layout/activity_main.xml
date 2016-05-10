@@ -26,15 +26,15 @@
         android:text="@string/but_start"
         />
     <RadioGroup
-        android:id="@+id/radio_date"
+        android:id="@+id/radio_group"
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
         <RadioButton
-            android:id="@+id/radio_date1"
+            android:id="@+id/radio_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/radio_time" />
+            android:text="@string/radio_data" />
         <RadioButton
             android:id="@+id/radio_time"
             android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content">
 
         <CalendarView
-            android:if="@+id/calender"
+            android:id="@+id/calender"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/but_done"/>
-        <TextureView
+        <TextView
             android:id="@+id/text_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

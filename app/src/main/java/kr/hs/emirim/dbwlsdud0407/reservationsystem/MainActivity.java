@@ -32,5 +32,21 @@ public class MainActivity extends AppCompatActivity {
         textResult=(TextView)findViewById(R.id.text_result);
         timepick.setVisibility(View.INVISIBLE);
         calView.setVisibility(View.INVISIBLE);
+
+        radioDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calView.setVisibility(View.VISIBLE);
+                timepick.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        radioTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calView.setVisibility(View.INVISIBLE);
+                timepick.setVisibility(View.VISIBLE);
+            }
+        });
     }
 }
